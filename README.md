@@ -4,6 +4,12 @@ A simple responsive website built with HTML and CSS, based on a design template 
 
 ---
 
+Figma design
+The website design is based on the following Figma template:
+View the Figma design
+
+---
+
 ## About the project
 
 This project is a static front-end website developed by translating a Figma design into clean and semantic HTML and CSS.  
