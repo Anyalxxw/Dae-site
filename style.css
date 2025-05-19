@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+:root{
+    --color-red: rgba(179, 96, 80, 1);
+    --color-green: rgba(169, 174, 141, 1);
+    --color-white: rgba(246, 244, 236, 1);
+    --color-pink: rgba(223, 155, 122, 1);
+    --color-beige: rgba(241, 211, 185, 1);
+}
+h1, h2, p{
+    font-weight: 400;
+}
+
+/* top bar */
+.top-bar{
+    background: var(--color-red);
+    text-align: center;
+    color: var(--color-beige);
+}
+.top-bar h1{
+    padding: 0.5rem 0;
+    font-size: 17px;
+}
+
+/* nav bar */
+nav{
+    background: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 5vh;
+}
+nav .nav-left-side a {
+    color: var(--color-red);
+    padding: 0 1rem;
+}
+nav .nav-right-side a{
+    color: var(--color-red);
+}
+
+/* main */
+main .photo{
+    background-image: url(img/main-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+main .photo a{
+    color: var(--color-white);
+    background: var(--color-red);
+    padding: 1rem;
+    position: relative;
+    top: 80%;
+    left: 45%;
+}
+main .description{
+    background: var(--color-green);
+    padding: 5% 3rem;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+main .description p{
+    font-size: 18px;
+}
+main .description h1{
+    font-size: 33px;
+}
+main .description a{
+    color: var(--color-white);
+}
+/* section */
+section{
+    background: var(--color-white);
+}
+section > h1{
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-red);
+}
+section .options{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 3rem 5% 3rem;
+}
+section .options .option{
+    text-align: start;
+    color: var(--color-red);
+}
+section .options .option img{
+    width: 90%;
+}
+section .offer{
+    background-image: url(img/option-4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2rem 5%;
+    height: 70vh;
+}
+section .offer > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 81%;
+    background: var(--color-pink);
+}
+section .offer > div h1{
+    color: var(--color-white);
+    padding: 2rem;
+}
+section .offer > div a{
+    color: var(--color-white);
+    padding-right: 2rem;
+}
+
+/* footer */
+footer h1{
+    text-align: center;
+    padding: 2rem;
+}
+footer .photos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 2rem;
+    gap: 1rem;
+}
+footer .photos img{
+    width: 100%;
+}
+footer .contacts_form {
+    margin-top: 2rem;
+    border-top: 1px solid var(--color-red);
+    background: var(--color-white);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 5% 2rem;
+}
+footer .contacts_form .contacts{
+    color: var(--color-red);
+}
+footer .contacts_form .contacts p{
+    padding: 0.3rem 0;
+}
+footer .contacts_form .form {
+    color: var(--color-red);
+}
+footer .contacts_form .form h1{
+    font-size: 14px;
+}
+footer .contacts_form .form div {
+    border: 1px solid var(--color-red);
+    padding: 1rem;
+    display: flex;
+    justify-content: end;
+}
+footer .contacts_form .form h2{
+    font-size: 14px;
+    padding-top: 1rem;
+}
+
+/* media queries */
+@media screen and (max-width: 800px) {
+    nav{
+        height: 2rem;
+    }
+    nav img{
+        display: none;
+    }
+    section .offer > div{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    section .offer > div a{
+        display: none;
+    }
+    footer .photos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 2rem;
+        gap: 1rem;
+    }
+    footer .contacts_form {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 700px) {
+    section .options{
+        grid-template-columns: 1fr;
+    }
+    section .options .option img{
+        width: 100%;
+    }
+}
