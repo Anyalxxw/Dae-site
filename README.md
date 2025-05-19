@@ -6,7 +6,7 @@ A simple responsive website built with HTML and CSS, based on a design template 
 
 Figma design
 The website design is based on the following Figma template:
-View the Figma design
+[View the Figma design](https://www.figma.com/design/8uX876jgmXe0S0zfkfjuvg/Dae?node-id=0-1&p=f&t=L6a4OdkVpR71Zc8T-0)
 
 ---
 
